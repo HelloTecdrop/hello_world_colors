@@ -1,6 +1,7 @@
-// Copyright 2020-2023 Tecdrop (www.tecdrop.com)
-// Use of this source code is governed by an MIT-style license that can be
-// found in the LICENSE file.
+// Copyright 2020-2025 Tecdrop. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://www.tecdrop.com/helloworldcolors/license/.
 
 import 'package:flutter/material.dart';
 
@@ -12,10 +13,7 @@ import '../utils/utils.dart' as utils;
 /// app bar.
 class ColorPreviewScreen extends StatelessWidget {
   /// Creates a new color preview screen.
-  const ColorPreviewScreen({
-    Key? key,
-    required this.color,
-  }) : super(key: key);
+  const ColorPreviewScreen({Key? key, required this.color}) : super(key: key);
 
   /// The color to preview.
   final Color color;
@@ -26,11 +24,7 @@ class ColorPreviewScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: color,
-      appBar: AppBar(
-        backgroundColor: color,
-        foregroundColor: contrastColor,
-        elevation: 0.0,
-      ),
+      appBar: AppBar(backgroundColor: color, foregroundColor: contrastColor, elevation: 0.0),
     );
   }
 }

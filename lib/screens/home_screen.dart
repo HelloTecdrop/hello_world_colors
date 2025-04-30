@@ -1,6 +1,7 @@
-// Copyright 2020-2023 Tecdrop (www.tecdrop.com)
-// Use of this source code is governed by an MIT-style license that can be
-// found in the LICENSE file.
+// Copyright 2020-2025 Tecdrop. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://www.tecdrop.com/helloworldcolors/license/.
 
 import 'dart:math';
 import 'package:flutter/material.dart';
@@ -58,9 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
       case HomeAppBarActions.colorPreview:
         Navigator.push(
           context,
-          MaterialPageRoute(
-            builder: (context) => ColorPreviewScreen(color: _randomWebColor.color),
-          ),
+          MaterialPageRoute(builder: (context) => ColorPreviewScreen(color: _randomWebColor.color)),
         );
         break;
 
@@ -89,15 +88,10 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       // The app bar with the title and main actions
-      appBar: HomeAppBar(
-        onAction: _onAppBarAction,
-      ),
+      appBar: HomeAppBar(onAction: _onAppBarAction),
 
       // The body of the screen is the Hello World Color widget
-      body: HelloWorldColor(
-        webColor: _randomWebColor,
-        greeting: strings.helloGreeting,
-      ),
+      body: HelloWorldColor(webColor: _randomWebColor, greeting: strings.helloGreeting),
 
       // The floating action button is used to shuffle the color being displayed
       floatingActionButton: FloatingActionButton.large(

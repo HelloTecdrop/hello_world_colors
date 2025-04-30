@@ -1,8 +1,7 @@
-// Copyright 2020-2023 Tecdrop (www.tecdrop.com)
-// Use of this source code is governed by an MIT-style license that can be
-// found in the LICENSE file.
-
-// cSpell:ignore Cornsilk, Gainsboro, Rebecca
+// Copyright 2020-2025 Tecdrop. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://www.tecdrop.com/helloworldcolors/license/.
 
 /// Defines an extension method on [Random] that generates a random web color.
 library;

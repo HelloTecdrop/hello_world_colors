@@ -1,6 +1,7 @@
-// Copyright 2020-2023 Tecdrop (www.tecdrop.com)
-// Use of this source code is governed by an MIT-style license that can be
-// found in the LICENSE file.
+// Copyright 2020-2025 Tecdrop. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://www.tecdrop.com/helloworldcolors/license/.
 
 import 'package:flutter/material.dart';
 
@@ -11,10 +12,7 @@ enum HomeAppBarActions { colorPreview, copy, about }
 
 /// The app bar of the Home Screen.
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const HomeAppBar({
-    Key? key,
-    required this.onAction,
-  }) : super(key: key);
+  const HomeAppBar({Key? key, required this.onAction}) : super(key: key);
 
   /// The callback that is called when an app bar action is pressed.
   final Function(HomeAppBarActions action) onAction;
@@ -32,18 +30,19 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
         PopupMenuButton<HomeAppBarActions>(
           onSelected: onAction,
-          itemBuilder: (BuildContext context) => <PopupMenuEntry<HomeAppBarActions>>[
-            // The copy color code action
-            const PopupMenuItem<HomeAppBarActions>(
-              value: HomeAppBarActions.copy,
-              child: Text(strings.copyAction),
-            ),
-            // The app homepage action
-            const PopupMenuItem<HomeAppBarActions>(
-              value: HomeAppBarActions.about,
-              child: Text(strings.aboutAction),
-            ),
-          ],
+          itemBuilder:
+              (BuildContext context) => <PopupMenuEntry<HomeAppBarActions>>[
+                // The copy color code action
+                const PopupMenuItem<HomeAppBarActions>(
+                  value: HomeAppBarActions.copy,
+                  child: Text(strings.copyAction),
+                ),
+                // The app homepage action
+                const PopupMenuItem<HomeAppBarActions>(
+                  value: HomeAppBarActions.about,
+                  child: Text(strings.aboutAction),
+                ),
+              ],
         ),
       ],
     );

@@ -1,6 +1,7 @@
-// Copyright 2020-2023 Tecdrop (www.tecdrop.com)
-// Use of this source code is governed by an MIT-style license that can be
-// found in the LICENSE file.
+// Copyright 2020-2025 Tecdrop. All rights reserved.
+// Use of this source code is governed by an MIT-style
+// license that can be found in the LICENSE file or at
+// https://www.tecdrop.com/helloworldcolors/license/.
 
 import 'package:flutter/material.dart';
 
@@ -12,11 +13,8 @@ import '../utils/utils.dart' as utils;
 /// The widget is filled with the specified web color, and displays the color name in the center. It
 /// also animates color changes.
 class HelloWorldColor extends StatelessWidget {
-  const HelloWorldColor({
-    Key? key,
-    required this.webColor,
-    required this.greeting,
-  }) : super(key: key);
+  const HelloWorldColor({Key? key, required this.webColor, required this.greeting})
+    : super(key: key);
 
   /// The web color being displayed.
   final WebColor webColor;
