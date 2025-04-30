@@ -13,7 +13,7 @@ import '../utils/utils.dart' as utils;
 /// app bar.
 class ColorPreviewScreen extends StatelessWidget {
   /// Creates a new color preview screen.
-  const ColorPreviewScreen({Key? key, required this.color}) : super(key: key);
+  const ColorPreviewScreen({super.key, required this.color});
 
   /// The color to preview.
   final Color color;

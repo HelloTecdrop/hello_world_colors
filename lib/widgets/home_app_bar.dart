@@ -12,7 +12,7 @@ enum HomeAppBarActions { colorPreview, copy, about }
 
 /// The app bar of the Home Screen.
 class HomeAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const HomeAppBar({Key? key, required this.onAction}) : super(key: key);
+  const HomeAppBar({super.key, required this.onAction});
 
   /// The callback that is called when an app bar action is pressed.
   final Function(HomeAppBarActions action) onAction;

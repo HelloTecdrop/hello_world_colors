@@ -19,7 +19,8 @@ extension ColorExtension on Color {
   }
 
   /// Returns a [String] representation of the color in hexadecimal format.
-  String toHexString() => '#${(value & 0xFFFFFF).toRadixString(16).padLeft(6, '0').toUpperCase()}';
+  String toHexString() =>
+      '#${(toARGB32() & 0xFFFFFF).toRadixString(16).padLeft(6, '0').toUpperCase()}';
 }
 
 /// Shows a [SnackBar] with the specified [text].

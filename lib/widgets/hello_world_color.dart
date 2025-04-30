@@ -13,8 +13,7 @@ import '../utils/utils.dart' as utils;
 /// The widget is filled with the specified web color, and displays the color name in the center. It
 /// also animates color changes.
 class HelloWorldColor extends StatelessWidget {
-  const HelloWorldColor({Key? key, required this.webColor, required this.greeting})
-    : super(key: key);
+  const HelloWorldColor({super.key, required this.webColor, required this.greeting});
 
   /// The web color being displayed.
   final WebColor webColor;
